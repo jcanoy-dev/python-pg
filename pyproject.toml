@@ -4,26 +4,12 @@ version = "0.1.0"
 description = "FastAPI Portfolio Analytics Engine on Cloudflare"
 requires-python = ">=3.13"
 dependencies = [
-    "annotated-doc",
-    "annotated-types",
-    "anyio",
-    "certifi",
-    "click",
-    "cloudflare",
-    "distro",
     "fastapi",
-    "h11",
-    "httpcore",
-    "httpx",
-    "idna",
     "pydantic",
-    "pydantic-settings",
-    "pydantic_core",
-    "sniffio",
-    "starlette",
-    "typing-inspection",
-    "typing_extensions"
+    "httpx",
+    "cloudflare"
 ]
+
 
 [tool.uv]
 managed = true
