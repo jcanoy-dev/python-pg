@@ -4,10 +4,17 @@ version = "0.1.0"
 description = "FastAPI Portfolio Analytics Engine on Cloudflare"
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.110.0",
-    "pydantic>=2.0.0",
-    "pydantic-settings>=2.0.0"
+    "fastapi",
+    "pydantic",
+    "pydantic-settings"
 ]
 
 [tool.uv]
 managed = true
+
+
+[dependency-groups]
+dev = [
+  "workers-py",
+  "workers-runtime-sdk"
+]
