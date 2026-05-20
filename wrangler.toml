@@ -1,4 +1,4 @@
-name = "portfolio-analytics-api"
+name = "python-pg"
 main = "main.py"
 compatibility_date = "2026-05-20"   
 compatibility_flags = ["python_workers"]
