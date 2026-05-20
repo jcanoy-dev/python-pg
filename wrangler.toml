@@ -1,0 +1,9 @@
+name = "portfolio-analytics-api"
+main = "main.py"
+compatibility_date = "2026-05-20"   
+compatibility_flags = ["python_workers"]
+
+[[d1_databases]]
+binding = "DB"                       
+database_name = "db-jcanoy" 
+database_id = "15e39783-dba2-4498-bcaa-a8d5a73e8051"
