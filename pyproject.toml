@@ -1,19 +1,17 @@
 [project]
 name = "python-pg"
 version = "0.1.0"
-description = "FastAPI Portfolio Analytics Engine on Cloudflare"
+description = "FastAPI Portfolio Analytics Engine on Vercel + Neon"
 requires-python = ">=3.12"
 dependencies = [
   "fastapi",
   "pydantic",
-  "httpx",
-  "workers-runtime-sdk"
+  "pydantic-settings",
+  "psycopg2-binary"
 ]
-
 
 [tool.uv]
 managed = true
-
 
 [dependency-groups]
 dev = [
