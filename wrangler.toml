@@ -1,6 +1,7 @@
 name = "python-pg"
 main = "main.py"
-compatibility_date = "2026-05-20"   
+account_id = "5c01bbd3206cb8b4f654909e30c2a192"
+compatibility_date = "2026-05-20"
 compatibility_flags = ["python_workers"]
 
 [[d1_databases]]
