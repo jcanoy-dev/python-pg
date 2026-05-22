@@ -7,7 +7,6 @@ dependencies = [
   "fastapi",
   "pydantic",
   "httpx",
-  "workers-py",
   "workers-runtime-sdk"
 ]
 
