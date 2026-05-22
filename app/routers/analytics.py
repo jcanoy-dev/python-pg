@@ -1,10 +1,9 @@
+from typing import Any
 from fastapi import APIRouter, Depends, Request, BackgroundTasks
-from cloudflare import Cloudflare
 
 from app.database.d1_client import get_d1_client
 from app.schemas.analytics import AnalyticsPayload
 from app.core.security import generate_session_id, extract_device_and_country
-# Import your newly created service file logic
 from app.database.services import run_d1_analytics_pipeline
 
 router = APIRouter(prefix="/api/analytics", tags=["Analytics Collection"])
@@ -14,7 +13,7 @@ async def track_visit(
     payload: AnalyticsPayload,
     request: Request,
     background_tasks: BackgroundTasks,
-    db: Cloudflare = Depends(get_d1_client)
+    db: Any = Depends(get_d1_client)
 ):
     session_id = generate_session_id(request)
     country, device = extract_device_and_country(request)
