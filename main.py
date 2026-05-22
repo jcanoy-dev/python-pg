@@ -4,4 +4,9 @@ from app.routers import analytics
 
 app = FastAPI(title="Portfolio API", version="1.0.0")
 app.include_router(analytics.router)
-app.add_middleware(CORSMiddleware, allow_origins=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
