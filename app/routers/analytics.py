@@ -16,7 +16,7 @@ async def track_visit(
     db: Any = Depends(get_db_client)
 ):
     session_id = generate_session_id(request)
-    country, device = extract_device_and_country(request)
+    country, device = await extract_device_and_country(request)
 
     background_tasks.add_task(
         run_d1_analytics_pipeline,
